@@ -1,0 +1,69 @@
+!<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaral Import</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- a imagem precisa estar dentro da navbar e com identificador exclusivo -->
+        <div class="logo">
+            <img src="logo.png" alt="Logo Amara Import">
+        </div>
+        <nav>
+            <!-- precisa colocar classe em cada item da lista para ser listada dentro do CSS -->
+            <ul>
+                <!-- Cada item da lista precisa levar até um ponto especifico da página, isso deve ser feito após o figma estar todo feito -->
+                <li><a href="#">Sobre</a></li>  
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#" class="active">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Itens pai precisam ter um identificador único na pagina, ou seja um ID, semânticamente fica muito melhor, ou seja, nomear de forma mais explicita os itens -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Elegância Atemporal em Cada Detalhe</h1>
+                <!-- O texto de apoio em baixo não pode ser um pararágrafo, precisa ser um H2 ou H3 -->
+                <p>Explore nossa coleção de gravatas e suspensórios, feitos com materiais de alta qualidade, combinando estilo e sofisticação para qualquer ocasião.</p>
+                <!-- O button não precisa ser necessáriamente um link, trazer uma tag button seria mais interessante, além de nomealos de forma mais especifica como CTA -->
+                <a href="#" class="button">Entre em Contato</a>
+            </div>
+            <div class="hero-image">
+                <!-- Descrição da imagem muito vaga -->
+                <img src="modelo.png" alt="Modelo com Gravata">
+            </div>
+        </section>
+        <!-- A sessão abaixo tem uma class, ao invés de um ID, novamente a questão dos identificadores únicos para elementos pai -->
+        <section class="products">
+            <div class="product">
+                <!-- As imagens devem estar dentro de um pasta chamada Assets, para melhor identificar oque é oque, além de trazer mais organização pro projeto -->
+                <img src="gravata1.png" alt="Gravata Riscado Terracota">
+                <h3>Gravata Riscado Terracota</h3>
+                <p class="price">R$16,99 <span class="old-price">R$19,99</span></p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <!-- Cada item da lista de produtos precisam estar devidamente nomeados, se eles tem a mesma classe não é possivel alteralos de forma única, e isso vai ser feito. -->
+            <div class="product">
+                <img src="gravata2.png" alt="Gravata Fúcsia">
+                <h3>Gravata Fúcsia</h3>
+                <p class="price">R$15,99 <span class="old-price">R$18,99</span></p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="product">
+                <img src="gravata3.png" alt="Gravata Verde Esmeralda">
+                <h3>Gravata Verde Esmeralda</h3>
+                <p class="price">R$17,99 <span class="old-price">R$20,99</span></p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+        </section>
+    </main>
+    <!-- Não existe um JS pronto, não há necessidade do arquivo aqui. -->
+    <script src="scripts.js"></script>
+</body>
+</html>
